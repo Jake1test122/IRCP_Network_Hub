@@ -126,6 +126,59 @@ async def preview_icrp(ctx):
                    f"{len(m['channels'])} channels. No deletion will occur.")
 
 
+
+@bot.command(name='build_channels')
+async def build_channels(ctx, confirm=''):
+    """Create missing categories/channels only. Never deletes or modifies existing channels."""
+    if not await allowed(ctx): return
+    if confirm != 'CONFIRM':
+        await ctx.send('Channel-only builder: !build_channels CONFIRM. No wipe or role deletion.')
+        return
+    guild = ctx.guild
+    me = guild.me
+    if not me or not me.guild_permissions.manage_channels:
+        await ctx.send('Missing Manage Channels permission for the Community bot.')
+        return
+    progress = await ctx.send('Building missing ICRP categories and channels now. Existing channels will be preserved.')
+    counts = [0, 0]
+    failures = []
+    for cat_data in TEMPLATE['categories']:
+        try:
+            category = discord.utils.get(guild.categories, name=cat_data['name'])
+            if category is None:
+                category = await guild.create_category(
+                    cat_data['name'], overwrites=can_view(guild, cat_data['access']) or {},
+                    reason='ICRP channel-only setup')
+                counts[0] += 1
+            present = {(ch.name, 'voice' if isinstance(ch, discord.VoiceChannel) else 'text')
+                       for ch in category.channels}
+            for ch_data in cat_data['channels']:
+                key = (ch_data['name'], ch_data['type'])
+                if key in present:
+                    continue
+                try:
+                    if ch_data['type'] == 'voice':
+                        await guild.create_voice_channel(ch_data['name'], category=category,
+                                                         user_limit=ch_data.get('limit', 0),
+                                                         reason='ICRP channel-only setup')
+                    else:
+                        await guild.create_text_channel(ch_data['name'], category=category,
+                                                        reason='ICRP channel-only setup')
+                    counts[1] += 1
+                    present.add(key)
+                    if counts[1] % 20 == 0:
+                        print(f'ICRP channel build progress: {counts[1]} channels created', flush=True)
+                    await asyncio.sleep(0.18)
+                except (discord.HTTPException, discord.Forbidden) as e:
+                    failures.append(f"{cat_data['name']}/{ch_data['name']}: {e}")
+        except (discord.HTTPException, discord.Forbidden) as e:
+            failures.append(f"{cat_data['name']}: {e}")
+    await progress.edit(content=f'Channel build finished: {counts[0]} categories and {counts[1]} channels created; '
+                                f'{len(failures)} errors. Nothing was deleted.'
+                                + (' First errors: ' + '; '.join(failures[:2])[:450] if failures else ''))
+    print(f'ICRP channel build finished: {counts}, errors={len(failures)}', flush=True)
+
+
 @bot.command(name='setup_icrp')
 async def setup_icrp(ctx, confirm=''):
     if not await allowed(ctx): return
