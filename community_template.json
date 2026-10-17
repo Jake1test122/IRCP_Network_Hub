@@ -1156,9 +1156,108 @@
       "name": "ICRP | Economy Participant",
       "tier": "member",
       "color": "#54BFA4"
+    },
+    {
+      "name": "🤖 ICRP Bots",
+      "tier": "member",
+      "color": "#8195AD"
     }
   ],
   "categories": [
+    {
+      "name": "📜 ICRP SERVER INFORMATION",
+      "access": "public",
+      "channels": [
+        {
+          "name": "📌│start-here",
+          "type": "text"
+        },
+        {
+          "name": "🚦│server-conduct",
+          "type": "text"
+        },
+        {
+          "name": "🚫│banned-vehicles-weapons",
+          "type": "text"
+        },
+        {
+          "name": "🗓️│session-calendar",
+          "type": "text"
+        },
+        {
+          "name": "❓│getting-started",
+          "type": "text"
+        },
+        {
+          "name": "🆘│support-guide",
+          "type": "text"
+        },
+        {
+          "name": "📣│department-promotions",
+          "type": "text"
+        },
+        {
+          "name": "💡│community-suggestions",
+          "type": "text"
+        },
+        {
+          "name": "⏳│time-zones",
+          "type": "text"
+        },
+        {
+          "name": "🪪│character-names",
+          "type": "text"
+        },
+        {
+          "name": "🎭│choose-your-roles",
+          "type": "text"
+        },
+        {
+          "name": "🚓│leo-department-info",
+          "type": "text"
+        },
+        {
+          "name": "🚒│fire-ems-department-info",
+          "type": "text"
+        },
+        {
+          "name": "hello-goodbye",
+          "type": "text"
+        },
+        {
+          "name": "banned-vehicles-weapons",
+          "type": "text"
+        },
+        {
+          "name": "roleplay-schedule",
+          "type": "text"
+        },
+        {
+          "name": "department-advertisements",
+          "type": "text"
+        },
+        {
+          "name": "time-zones",
+          "type": "text"
+        },
+        {
+          "name": "character-names",
+          "type": "text"
+        },
+        {
+          "name": "reaction-roles",
+          "type": "text"
+        },
+        {
+          "name": "leo-server",
+          "type": "text"
+        },
+        {
+          "name": "fire-ems-server",
+          "type": "text"
+        }
+      ]
+    },
     {
       "name": "📌 START HERE",
       "access": "public",
@@ -1286,526 +1385,99 @@
       ]
     },
     {
-      "name": "🎫 HELP DESK",
-      "access": "public",
-      "channels": [
-        {
-          "name": "open-a-ticket",
-          "type": "text"
-        },
-        {
-          "name": "frequently-asked-questions",
-          "type": "text"
-        },
-        {
-          "name": "appeals-information",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "name": "📋 APPLICATIONS",
+      "name": "📣 ICRP SESSION COMMAND",
       "access": "member",
       "channels": [
         {
-          "name": "apply-for-staff",
+          "name": "📍│session-aop",
           "type": "text"
         },
         {
-          "name": "apply-for-leo",
+          "name": "📣│governor-bulletins",
           "type": "text"
         },
         {
-          "name": "apply-for-fire-ems",
+          "name": "🚦│in-session-updates",
           "type": "text"
         },
         {
-          "name": "apply-for-dispatch",
+          "name": "🚫│prohibited-servers",
           "type": "text"
         },
         {
-          "name": "apply-for-civilian",
+          "name": "🗓️│roleplay-calendar",
           "type": "text"
         },
         {
-          "name": "application-status",
+          "name": "🎮│session-signups",
+          "type": "text"
+        },
+        {
+          "name": "ICRP Session Lobby",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Session Operations",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "session-aops",
+          "type": "text"
+        },
+        {
+          "name": "governor-announcements",
+          "type": "text"
+        },
+        {
+          "name": "in-rp-announcement",
+          "type": "text"
+        },
+        {
+          "name": "blacklisted-servers",
           "type": "text"
         }
       ]
     },
     {
-      "name": "🚓 LAW ENFORCEMENT",
-      "access": "leo",
-      "channels": [
-        {
-          "name": "leo-announcements",
-          "type": "text"
-        },
-        {
-          "name": "leo-roster",
-          "type": "text"
-        },
-        {
-          "name": "leo-reports",
-          "type": "text"
-        },
-        {
-          "name": "leo-training",
-          "type": "text"
-        },
-        {
-          "name": "leo-resources",
-          "type": "text"
-        },
-        {
-          "name": "leo-radio",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "leo-briefing",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🚒 FIRE & EMS",
-      "access": "fire",
-      "channels": [
-        {
-          "name": "fire-ems-announcements",
-          "type": "text"
-        },
-        {
-          "name": "fire-ems-roster",
-          "type": "text"
-        },
-        {
-          "name": "fire-ems-reports",
-          "type": "text"
-        },
-        {
-          "name": "medical-training",
-          "type": "text"
-        },
-        {
-          "name": "fire-ems-radio",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "fire-ems-briefing",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "📞 DISPATCH",
-      "access": "dispatch",
-      "channels": [
-        {
-          "name": "dispatch-announcements",
-          "type": "text"
-        },
-        {
-          "name": "dispatch-log",
-          "type": "text"
-        },
-        {
-          "name": "dispatch-sop",
-          "type": "text"
-        },
-        {
-          "name": "dispatch-operations",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🚗 CIVILIAN OPERATIONS",
-      "access": "civilian",
-      "channels": [
-        {
-          "name": "civilian-announcements",
-          "type": "text"
-        },
-        {
-          "name": "business-registration",
-          "type": "text"
-        },
-        {
-          "name": "civilian-operations",
-          "type": "text"
-        },
-        {
-          "name": "civilian-briefing",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🔊 PUBLIC VOICE",
+      "name": "🖥️ ICRP CAD & MDT",
       "access": "member",
       "channels": [
         {
-          "name": "General VC 1",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "General VC 2",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Community Hangout",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Looking For RP",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "AFK",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🎭 ROLEPLAY VOICE",
-      "access": "member",
-      "channels": [
-        {
-          "name": "RP Waiting Room",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "RP Scene 1",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "RP Scene 2",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "RP Scene 3",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Traffic Stop 1",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Traffic Stop 2",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Interview Room 1",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Interview Room 2",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🏛️ STAFF ZONE",
-      "access": "staff",
-      "channels": [
-        {
-          "name": "staff-announcements",
+          "name": "🖥️│cad-announcements",
           "type": "text"
         },
         {
-          "name": "staff-chat",
+          "name": "🚓│cad-and-mdt-access",
           "type": "text"
         },
         {
-          "name": "staff-schedule",
+          "name": "📖│cad-user-guide",
           "type": "text"
         },
         {
-          "name": "staff-reports",
+          "name": "🛠️│cad-support",
           "type": "text"
         },
         {
-          "name": "staff-guidelines",
+          "name": "🚨│dispatch-incidents",
           "type": "text"
         },
         {
-          "name": "staff-resources",
+          "name": "cad-announcements",
           "type": "text"
         },
         {
-          "name": "Staff Meeting",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Staff Lounge",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🔐 MODERATION",
-      "access": "moderation",
-      "channels": [
-        {
-          "name": "mod-chat",
+          "name": "cad-mdt",
           "type": "text"
         },
         {
-          "name": "incident-reports",
+          "name": "cad-guide",
           "type": "text"
         },
         {
-          "name": "moderation-log",
-          "type": "text"
-        },
-        {
-          "name": "security-alerts",
-          "type": "text"
-        },
-        {
-          "name": "ticket-transcripts",
-          "type": "text"
-        },
-        {
-          "name": "Moderation VC",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "👑 EXECUTIVE",
-      "access": "lead",
-      "channels": [
-        {
-          "name": "leadership-chat",
-          "type": "text"
-        },
-        {
-          "name": "executive-decisions",
-          "type": "text"
-        },
-        {
-          "name": "staff-appointments",
-          "type": "text"
-        },
-        {
-          "name": "Leadership VC",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "🤖 BOT SYSTEM",
-      "access": "moderation",
-      "channels": [
-        {
-          "name": "bot-logs",
-          "type": "text"
-        },
-        {
-          "name": "join-leave-logs",
-          "type": "text"
-        },
-        {
-          "name": "verification-logs",
-          "type": "text"
-        },
-        {
-          "name": "automod-alerts",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "name": "🧑‍🏫 STAFF TRAINING",
-      "access": "staff",
-      "channels": [
-        {
-          "name": "staff-training-info",
-          "type": "text"
-        },
-        {
-          "name": "training-materials",
-          "type": "text"
-        },
-        {
-          "name": "training-announcements",
-          "type": "text"
-        },
-        {
-          "name": "training-request",
-          "type": "text"
-        },
-        {
-          "name": "training-results",
-          "type": "text"
-        },
-        {
-          "name": "Staff Training Room",
-          "type": "voice"
-        },
-        {
-          "name": "Staff Interview Room",
-          "type": "voice"
-        }
-      ]
-    },
-    {
-      "name": "📅 STAFF OPERATIONS",
-      "access": "staff",
-      "channels": [
-        {
-          "name": "staff-check-in",
-          "type": "text"
-        },
-        {
-          "name": "shift-and-availability",
-          "type": "text"
-        },
-        {
-          "name": "leave-of-absence",
-          "type": "text"
-        },
-        {
-          "name": "staff-promotions",
-          "type": "text"
-        },
-        {
-          "name": "staff-feedback",
-          "type": "text"
-        },
-        {
-          "name": "staff-notices",
-          "type": "text"
-        },
-        {
-          "name": "Staff Briefing 1",
-          "type": "voice"
-        },
-        {
-          "name": "Staff Briefing 2",
-          "type": "voice"
-        }
-      ]
-    },
-    {
-      "name": "⚖️ STAFF COMPLIANCE & HR",
-      "access": "lead",
-      "channels": [
-        {
-          "name": "hr-announcements",
-          "type": "text"
-        },
-        {
-          "name": "internal-investigations",
-          "type": "text"
-        },
-        {
-          "name": "staff-disciplinary-cases",
-          "type": "text"
-        },
-        {
-          "name": "staff-appeals",
-          "type": "text"
-        },
-        {
-          "name": "staff-review-board",
-          "type": "text"
-        },
-        {
-          "name": "HR Meeting",
-          "type": "voice"
-        },
-        {
-          "name": "Private Hearing Room",
-          "type": "voice"
-        }
-      ]
-    },
-    {
-      "name": "📥 STAFF APPLICATION REVIEWS",
-      "access": "staff",
-      "channels": [
-        {
-          "name": "staff-applications",
-          "type": "text"
-        },
-        {
-          "name": "interview-scheduling",
-          "type": "text"
-        },
-        {
-          "name": "interview-results",
-          "type": "text"
-        },
-        {
-          "name": "recruitment-team",
-          "type": "text"
-        },
-        {
-          "name": "Recruitment Interview 1",
-          "type": "voice"
-        },
-        {
-          "name": "Recruitment Interview 2",
-          "type": "voice"
-        }
-      ]
-    },
-    {
-      "name": "📂 STAFF DOCUMENTS",
-      "access": "staff",
-      "channels": [
-        {
-          "name": "staff-handbook",
-          "type": "text"
-        },
-        {
-          "name": "chain-of-command",
-          "type": "text"
-        },
-        {
-          "name": "staff-rules",
-          "type": "text"
-        },
-        {
-          "name": "staff-sop",
-          "type": "text"
-        },
-        {
-          "name": "discipline-policy",
-          "type": "text"
-        },
-        {
-          "name": "promotion-policy",
-          "type": "text"
-        },
-        {
-          "name": "retirement-policy",
+          "name": "cad-support",
           "type": "text"
         }
       ]
@@ -2007,99 +1679,306 @@
       ]
     },
     {
-      "name": "🖥️ ICRP CAD & MDT",
+      "name": "🎉 ICRP EVENTS & ACTIVITIES",
       "access": "member",
       "channels": [
         {
-          "name": "🖥️│cad-announcements",
+          "name": "in-rp-events",
           "type": "text"
         },
         {
-          "name": "🚓│cad-and-mdt-access",
+          "name": "gta-minigames",
           "type": "text"
         },
         {
-          "name": "📖│cad-user-guide",
+          "name": "out-of-rp-games",
           "type": "text"
         },
         {
-          "name": "🛠️│cad-support",
+          "name": "event-schedule",
           "type": "text"
         },
         {
-          "name": "🚨│dispatch-incidents",
-          "type": "text"
-        },
-        {
-          "name": "cad-announcements",
-          "type": "text"
-        },
-        {
-          "name": "cad-mdt",
-          "type": "text"
-        },
-        {
-          "name": "cad-guide",
-          "type": "text"
-        },
-        {
-          "name": "cad-support",
+          "name": "event-signups",
           "type": "text"
         }
       ]
     },
     {
-      "name": "📣 ICRP SESSION COMMAND",
+      "name": "🚓 ICRP CIVILIAN ROLEPLAY",
       "access": "member",
       "channels": [
         {
-          "name": "📍│session-aop",
+          "name": "🚨│civilian-scenarios",
           "type": "text"
         },
         {
-          "name": "📣│governor-bulletins",
+          "name": "🚗│civilian-rank-requests",
           "type": "text"
         },
         {
-          "name": "🚦│in-session-updates",
+          "name": "💡│civilian-suggestions",
           "type": "text"
         },
         {
-          "name": "🚫│prohibited-servers",
+          "name": "📈│career-options",
           "type": "text"
         },
         {
-          "name": "🗓️│roleplay-calendar",
+          "name": "📝│civilian-activity-logs",
           "type": "text"
         },
         {
-          "name": "🎮│session-signups",
+          "name": "🎫│civilian-support",
           "type": "text"
         },
         {
-          "name": "ICRP Session Lobby",
+          "name": "Civilian Roleplay 1",
           "type": "voice",
           "limit": 0
         },
         {
-          "name": "RP Session Operations",
+          "name": "Civilian Roleplay 2",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🚓 LAW ENFORCEMENT",
+      "access": "leo",
+      "channels": [
+        {
+          "name": "leo-announcements",
+          "type": "text"
+        },
+        {
+          "name": "leo-roster",
+          "type": "text"
+        },
+        {
+          "name": "leo-reports",
+          "type": "text"
+        },
+        {
+          "name": "leo-training",
+          "type": "text"
+        },
+        {
+          "name": "leo-resources",
+          "type": "text"
+        },
+        {
+          "name": "leo-radio",
           "type": "voice",
           "limit": 0
         },
         {
-          "name": "session-aops",
+          "name": "leo-briefing",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🚒 FIRE & EMS",
+      "access": "fire",
+      "channels": [
+        {
+          "name": "fire-ems-announcements",
           "type": "text"
         },
         {
-          "name": "governor-announcements",
+          "name": "fire-ems-roster",
           "type": "text"
         },
         {
-          "name": "in-rp-announcement",
+          "name": "fire-ems-reports",
           "type": "text"
         },
         {
-          "name": "blacklisted-servers",
+          "name": "medical-training",
+          "type": "text"
+        },
+        {
+          "name": "fire-ems-radio",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "fire-ems-briefing",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "📞 DISPATCH",
+      "access": "dispatch",
+      "channels": [
+        {
+          "name": "dispatch-announcements",
+          "type": "text"
+        },
+        {
+          "name": "dispatch-log",
+          "type": "text"
+        },
+        {
+          "name": "dispatch-sop",
+          "type": "text"
+        },
+        {
+          "name": "dispatch-operations",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🚗 CIVILIAN OPERATIONS",
+      "access": "civilian",
+      "channels": [
+        {
+          "name": "civilian-announcements",
+          "type": "text"
+        },
+        {
+          "name": "business-registration",
+          "type": "text"
+        },
+        {
+          "name": "civilian-operations",
+          "type": "text"
+        },
+        {
+          "name": "civilian-briefing",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🔊 PUBLIC VOICE",
+      "access": "member",
+      "channels": [
+        {
+          "name": "General VC 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "General VC 2",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Community Hangout",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Looking For RP",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "AFK",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🎭 ROLEPLAY VOICE",
+      "access": "member",
+      "channels": [
+        {
+          "name": "RP Waiting Room",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Scene 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Scene 2",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Scene 3",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Traffic Stop 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Traffic Stop 2",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Interview Room 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Interview Room 2",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "📋 APPLICATIONS",
+      "access": "member",
+      "channels": [
+        {
+          "name": "apply-for-staff",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-leo",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-fire-ems",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-dispatch",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-civilian",
+          "type": "text"
+        },
+        {
+          "name": "application-status",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🎫 HELP DESK",
+      "access": "public",
+      "channels": [
+        {
+          "name": "open-a-ticket",
+          "type": "text"
+        },
+        {
+          "name": "frequently-asked-questions",
+          "type": "text"
+        },
+        {
+          "name": "appeals-information",
           "type": "text"
         }
       ]
@@ -2194,140 +2073,6 @@
         },
         {
           "name": "Criminal Court",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
-      "name": "📜 ICRP SERVER INFORMATION",
-      "access": "public",
-      "channels": [
-        {
-          "name": "📌│start-here",
-          "type": "text"
-        },
-        {
-          "name": "🚦│server-conduct",
-          "type": "text"
-        },
-        {
-          "name": "🚫│banned-vehicles-weapons",
-          "type": "text"
-        },
-        {
-          "name": "🗓️│session-calendar",
-          "type": "text"
-        },
-        {
-          "name": "❓│getting-started",
-          "type": "text"
-        },
-        {
-          "name": "🆘│support-guide",
-          "type": "text"
-        },
-        {
-          "name": "📣│department-promotions",
-          "type": "text"
-        },
-        {
-          "name": "💡│community-suggestions",
-          "type": "text"
-        },
-        {
-          "name": "⏳│time-zones",
-          "type": "text"
-        },
-        {
-          "name": "🪪│character-names",
-          "type": "text"
-        },
-        {
-          "name": "🎭│choose-your-roles",
-          "type": "text"
-        },
-        {
-          "name": "🚓│leo-department-info",
-          "type": "text"
-        },
-        {
-          "name": "🚒│fire-ems-department-info",
-          "type": "text"
-        },
-        {
-          "name": "hello-goodbye",
-          "type": "text"
-        },
-        {
-          "name": "banned-vehicles-weapons",
-          "type": "text"
-        },
-        {
-          "name": "roleplay-schedule",
-          "type": "text"
-        },
-        {
-          "name": "department-advertisements",
-          "type": "text"
-        },
-        {
-          "name": "time-zones",
-          "type": "text"
-        },
-        {
-          "name": "character-names",
-          "type": "text"
-        },
-        {
-          "name": "reaction-roles",
-          "type": "text"
-        },
-        {
-          "name": "leo-server",
-          "type": "text"
-        },
-        {
-          "name": "fire-ems-server",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "name": "🚓 ICRP CIVILIAN ROLEPLAY",
-      "access": "member",
-      "channels": [
-        {
-          "name": "🚨│civilian-scenarios",
-          "type": "text"
-        },
-        {
-          "name": "🚗│civilian-rank-requests",
-          "type": "text"
-        },
-        {
-          "name": "💡│civilian-suggestions",
-          "type": "text"
-        },
-        {
-          "name": "📈│career-options",
-          "type": "text"
-        },
-        {
-          "name": "📝│civilian-activity-logs",
-          "type": "text"
-        },
-        {
-          "name": "🎫│civilian-support",
-          "type": "text"
-        },
-        {
-          "name": "Civilian Roleplay 1",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Civilian Roleplay 2",
           "type": "voice",
           "limit": 0
         }
@@ -2496,35 +2241,6 @@
       ]
     },
     {
-      "name": "👑 ICRP EXECUTIVE OFFICES",
-      "access": "lead",
-      "channels": [
-        {
-          "name": "👑│executive-schedule",
-          "type": "text"
-        },
-        {
-          "name": "🔒│executive-briefings",
-          "type": "text"
-        },
-        {
-          "name": "Founders Office",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Co-Owners Office",
-          "type": "voice",
-          "limit": 0
-        },
-        {
-          "name": "Executive Leadership Office",
-          "type": "voice",
-          "limit": 0
-        }
-      ]
-    },
-    {
       "name": "🛡️ ICRP CASES & DISCIPLINE",
       "access": "moderation",
       "channels": [
@@ -2660,27 +2376,316 @@
       ]
     },
     {
-      "name": "🎉 ICRP EVENTS & ACTIVITIES",
-      "access": "member",
+      "name": "🏛️ STAFF ZONE",
+      "access": "staff",
       "channels": [
         {
-          "name": "in-rp-events",
+          "name": "staff-announcements",
           "type": "text"
         },
         {
-          "name": "gta-minigames",
+          "name": "staff-chat",
           "type": "text"
         },
         {
-          "name": "out-of-rp-games",
+          "name": "staff-schedule",
           "type": "text"
         },
         {
-          "name": "event-schedule",
+          "name": "staff-reports",
           "type": "text"
         },
         {
-          "name": "event-signups",
+          "name": "staff-guidelines",
+          "type": "text"
+        },
+        {
+          "name": "staff-resources",
+          "type": "text"
+        },
+        {
+          "name": "Staff Meeting",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Staff Lounge",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🧑‍🏫 STAFF TRAINING",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-training-info",
+          "type": "text"
+        },
+        {
+          "name": "training-materials",
+          "type": "text"
+        },
+        {
+          "name": "training-announcements",
+          "type": "text"
+        },
+        {
+          "name": "training-request",
+          "type": "text"
+        },
+        {
+          "name": "training-results",
+          "type": "text"
+        },
+        {
+          "name": "Staff Training Room",
+          "type": "voice"
+        },
+        {
+          "name": "Staff Interview Room",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "📅 STAFF OPERATIONS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-check-in",
+          "type": "text"
+        },
+        {
+          "name": "shift-and-availability",
+          "type": "text"
+        },
+        {
+          "name": "leave-of-absence",
+          "type": "text"
+        },
+        {
+          "name": "staff-promotions",
+          "type": "text"
+        },
+        {
+          "name": "staff-feedback",
+          "type": "text"
+        },
+        {
+          "name": "staff-notices",
+          "type": "text"
+        },
+        {
+          "name": "Staff Briefing 1",
+          "type": "voice"
+        },
+        {
+          "name": "Staff Briefing 2",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "⚖️ STAFF COMPLIANCE & HR",
+      "access": "lead",
+      "channels": [
+        {
+          "name": "hr-announcements",
+          "type": "text"
+        },
+        {
+          "name": "internal-investigations",
+          "type": "text"
+        },
+        {
+          "name": "staff-disciplinary-cases",
+          "type": "text"
+        },
+        {
+          "name": "staff-appeals",
+          "type": "text"
+        },
+        {
+          "name": "staff-review-board",
+          "type": "text"
+        },
+        {
+          "name": "HR Meeting",
+          "type": "voice"
+        },
+        {
+          "name": "Private Hearing Room",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "📥 STAFF APPLICATION REVIEWS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-applications",
+          "type": "text"
+        },
+        {
+          "name": "interview-scheduling",
+          "type": "text"
+        },
+        {
+          "name": "interview-results",
+          "type": "text"
+        },
+        {
+          "name": "recruitment-team",
+          "type": "text"
+        },
+        {
+          "name": "Recruitment Interview 1",
+          "type": "voice"
+        },
+        {
+          "name": "Recruitment Interview 2",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "📂 STAFF DOCUMENTS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-handbook",
+          "type": "text"
+        },
+        {
+          "name": "chain-of-command",
+          "type": "text"
+        },
+        {
+          "name": "staff-rules",
+          "type": "text"
+        },
+        {
+          "name": "staff-sop",
+          "type": "text"
+        },
+        {
+          "name": "discipline-policy",
+          "type": "text"
+        },
+        {
+          "name": "promotion-policy",
+          "type": "text"
+        },
+        {
+          "name": "retirement-policy",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🔐 MODERATION",
+      "access": "moderation",
+      "channels": [
+        {
+          "name": "mod-chat",
+          "type": "text"
+        },
+        {
+          "name": "incident-reports",
+          "type": "text"
+        },
+        {
+          "name": "moderation-log",
+          "type": "text"
+        },
+        {
+          "name": "security-alerts",
+          "type": "text"
+        },
+        {
+          "name": "ticket-transcripts",
+          "type": "text"
+        },
+        {
+          "name": "Moderation VC",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "👑 ICRP EXECUTIVE OFFICES",
+      "access": "lead",
+      "channels": [
+        {
+          "name": "👑│executive-schedule",
+          "type": "text"
+        },
+        {
+          "name": "🔒│executive-briefings",
+          "type": "text"
+        },
+        {
+          "name": "Founders Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Co-Owners Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Executive Leadership Office",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "👑 EXECUTIVE",
+      "access": "lead",
+      "channels": [
+        {
+          "name": "leadership-chat",
+          "type": "text"
+        },
+        {
+          "name": "executive-decisions",
+          "type": "text"
+        },
+        {
+          "name": "staff-appointments",
+          "type": "text"
+        },
+        {
+          "name": "Leadership VC",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🤖 BOT SYSTEM",
+      "access": "moderation",
+      "channels": [
+        {
+          "name": "bot-logs",
+          "type": "text"
+        },
+        {
+          "name": "join-leave-logs",
+          "type": "text"
+        },
+        {
+          "name": "verification-logs",
+          "type": "text"
+        },
+        {
+          "name": "automod-alerts",
           "type": "text"
         }
       ]

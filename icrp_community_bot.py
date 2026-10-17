@@ -24,6 +24,12 @@ bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 ROLE_LEVELS = {r['name']: r['tier'] for r in TEMPLATE['roles']}
 OWNER_NAME = 'ICRP | Owner'
 BOT_MARKERS = ('wick', 'ticket tool', 'carl-bot', 'dyno')
+BOTS_ROLE_NAME = '🤖 ICRP Bots'
+
+def separately_displayed(name, tier):
+    # Group ICRP owner, staff ranks and bot members in the Discord member sidebar.
+    return name == BOTS_ROLE_NAME or tier in ('owner', 'lead', 'moderator', 'staff', 'trial')
+
 
 
 def role_perms(name, tier):
@@ -70,10 +76,22 @@ def can_view(guild, access):
     if access == 'civilian':
         allowed_names = {n for n in ROLE_LEVELS if 'Civilian' in n or 'Business Owner' in n}
     overwrites = {guild.default_role: discord.PermissionOverwrite(view_channel=False)}
-    for role in guild.roles:
-        if ROLE_LEVELS.get(role.name) in permitted or role.name in allowed_names:
-            overwrites[role] = discord.PermissionOverwrite(view_channel=True, read_message_history=True,
-                                                            send_messages=True, connect=True, speak=True)
+    # Discord accepts at most 100 permission-overwrite targets per category.
+    # Prefer privileged roles; do not grant @everyone visibility to work around the limit.
+    matching_roles = [role for role in guild.roles
+                      if ROLE_LEVELS.get(role.name) in permitted or role.name in allowed_names]
+    priority = {'owner': 0, 'lead': 1, 'moderator': 2, 'staff': 3, 'trial': 4,
+                'factionlead': 5, 'faction': 6, 'member': 7, 'applicant': 8}
+    matching_roles.sort(key=lambda role: (
+        priority.get(ROLE_LEVELS.get(role.name), 9),
+        0 if role.name in allowed_names else 1, -role.position, role.name))
+    if len(matching_roles) > 99:
+        print(f'WARNING: {access} category needs {len(matching_roles)} role overrides; '
+              'only first 99 can be set. Review denied roles and category permissions manually.',
+              flush=True)
+    for role in matching_roles[:99]:
+        overwrites[role] = discord.PermissionOverwrite(view_channel=True, read_message_history=True,
+                                                        send_messages=True, connect=True, speak=True)
     # Bot can see/log moderation or staff areas when explicitly installed.
     for member in guild.members:
         if member.bot and any(marker in member.name.lower() for marker in BOT_MARKERS):
@@ -203,7 +221,7 @@ async def install_template(guild):
         if discord.utils.get(guild.roles,name=r['name']): continue
         try:
             await guild.create_role(name=r['name'], permissions=role_perms(r['name'],r['tier']),
-                                    mentionable=False, hoist=r['tier'] in ('owner','lead','moderator'),
+                                    mentionable=False, hoist=separately_displayed(r['name'], r['tier']),
                                     reason='ICRP ICRP Community template installation')
             created[0]+=1
         except discord.HTTPException as e: failures.append(f"Role {r['name']}: {e}")
@@ -346,6 +364,120 @@ async def confirm_icrp_reset(ctx, code='', server_id=''):
     try: await ctx.author.send(report)
     except discord.HTTPException: pass
 
+@bot.command(name='arrange_icrp')
+async def arrange_icrp(ctx, confirm=''):
+    """Non-destructive category and channel order synchronization."""
+    if not await allowed(ctx): return
+    if confirm != 'CONFIRM':
+        await ctx.send('Preview the screenshot-inspired layout in community_template.json, then run '
+                       '!arrange_icrp CONFIRM. This reorders existing template categories/channels '
+                       'but does not delete messages or channels.')
+        return
+    guild = ctx.guild
+    me = guild.me
+    if not me or not me.guild_permissions.manage_channels:
+        await ctx.send('Missing Manage Channels permission.'); return
+    await ctx.send('Starting ICRP layout organization. This can take several minutes.')
+    categories_moved=channels_moved=0
+    problems=[]
+    # Discord orders category positions independently of in-category channel positions.
+    # Do not move channels across categories based only on duplicate names.
+    for ci, cat_spec in enumerate(TEMPLATE['categories']):
+        category=discord.utils.get(guild.categories,name=cat_spec['name'])
+        if not category:
+            problems.append('Missing category: '+cat_spec['name'])
+            continue
+        try:
+            if category.position!=ci:
+                await category.edit(position=ci, reason='ICRP screenshot layout category order')
+                categories_moved+=1
+                print(f'ICRP arranged category {ci+1}/{len(TEMPLATE["categories"])}: {category.name}',flush=True)
+        except (discord.HTTPException,discord.Forbidden) as exc:
+            problems.append(category.name+': '+str(exc))
+        # Batch reorder by text / voice because Discord stores them as separate types.
+        for channel_type in ('text','voice'):
+            desired = [x for x in cat_spec['channels'] if x['type']==channel_type]
+            for index, entry in enumerate(desired):
+                channel=next((ch for ch in category.channels
+                              if ch.name==entry['name'] and (
+                              isinstance(ch,discord.VoiceChannel) if channel_type=='voice'
+                              else isinstance(ch,discord.TextChannel))),None)
+                if not channel:
+                    problems.append(f'Missing channel: {category.name}/{entry["name"]}')
+                    continue
+                try:
+                    # Maintain relative template order, leaving unrecognized channels untouched.
+                    await channel.edit(position=index, reason='ICRP screenshot layout channel order')
+                    channels_moved+=1
+                    if channels_moved%25==0:
+                        print(f'ICRP arranged {channels_moved} channel positions',flush=True)
+                except (discord.HTTPException,discord.Forbidden) as exc:
+                    problems.append(f'{category.name}/{channel.name}: {exc}')
+    await ctx.send(f'ICRP layout finished: reordered {categories_moved} category positions and '
+                   f'{channels_moved} channel positions; {len(problems)} issues. '
+                   'No channels, roles or messages were deleted.'
+                   + (' First issues: '+ '; '.join(problems[:2])[:300] if problems else ''))
+    print('ICRP layout completed; issues:',problems[:15],flush=True)
+
+
+@bot.command(name='display_roles')
+async def display_roles(ctx, confirm=''):
+    """Create the Bots role, display staff and owner separately, and assign the owner role."""
+    if not await allowed(ctx): return
+    if confirm != 'CONFIRM':
+        await ctx.send('To create the Bots role and show Owner/Staff/Bots separately: !display_roles CONFIRM. '
+                       'This does not delete channels or change existing role permissions.')
+        return
+    guild=ctx.guild
+    me=guild.me
+    if not me or not me.guild_permissions.manage_roles:
+        await ctx.send('Missing Manage Roles permission.'); return
+    errors=[]
+    made=changed=assigned=0
+    for item in TEMPLATE['roles']:
+        if not separately_displayed(item['name'],item['tier']): continue
+        role=discord.utils.get(guild.roles,name=item['name'])
+        try:
+            if role is None:
+                role=await guild.create_role(
+                    name=item['name'], permissions=role_perms(item['name'], item['tier']),
+                    mentionable=False, hoist=True, reason='ICRP sidebar role grouping')
+                made+=1
+            elif not role.hoist and not role.managed:
+                if role >= me.top_role:
+                    errors.append(f'{role.name}: above bot hierarchy')
+                    continue
+                await role.edit(hoist=True, reason='ICRP sidebar role grouping')
+                changed+=1
+        except (discord.Forbidden,discord.HTTPException) as e:
+            errors.append(f'{item["name"]}: {e}')
+    owner_role=discord.utils.get(guild.roles,name=OWNER_NAME)
+    if owner_role:
+        owner=guild.get_member(guild.owner_id)
+        if owner is None:
+            try: owner=await guild.fetch_member(guild.owner_id)
+            except discord.HTTPException: owner=None
+        if owner and owner_role not in owner.roles:
+            try:
+                await owner.add_roles(owner_role, reason='Assign ICRP Owner role to server owner')
+                assigned+=1
+            except (discord.Forbidden,discord.HTTPException) as e:
+                errors.append(f'Owner assignment: {e}')
+    bots_role=discord.utils.get(guild.roles,name=BOTS_ROLE_NAME)
+    if bots_role:
+        for member in guild.members:
+            if member.bot and bots_role not in member.roles:
+                try:
+                    await member.add_roles(bots_role, reason='ICRP bot member grouping')
+                    assigned+=1
+                except (discord.Forbidden,discord.HTTPException) as e:
+                    errors.append(f'Bot {member.id}: {e}')
+    await ctx.send(f'Display update: created {made} roles, enabled separate display on {changed} roles, '
+                   f'assigned {assigned} members; {len(errors)} errors. '
+                   'No channels or existing role permissions were changed.'
+                   + (' First issues: '+ '; '.join(errors[:2])[:350] if errors else ''))
+
+
 @bot.command(name='audit_icrp')
 async def audit_icrp(ctx):
     if not await allowed(ctx): return
@@ -371,7 +503,7 @@ async def audit_icrp(ctx):
 @bot.command(name='help_icrp')
 async def help_icrp(ctx):
     if not await allowed(ctx): return
-    await ctx.send('Commands: !preview_icrp | !setup_icrp CONFIRM | !audit_icrp | !help_icrp. '
+    await ctx.send('Commands: !preview_icrp | !setup_icrp CONFIRM | !build_channels CONFIRM | !display_roles CONFIRM | !audit_icrp | !help_icrp. '
                    'Full reset: !preview_icrp_reset then !arm_icrp_reset I_UNDERSTAND_PERMANENT_DELETION.')
 
 bot.run(TOKEN, log_handler=None)
