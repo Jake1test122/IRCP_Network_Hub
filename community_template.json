@@ -1,0 +1,2701 @@
+{
+  "template": "ICRP ICRP Community RP Server",
+  "roles": [
+    {
+      "name": "ICRP | Owner",
+      "tier": "owner",
+      "color": "#F8C33C"
+    },
+    {
+      "name": "ICRP | Co-Owner",
+      "tier": "lead",
+      "color": "#D6A34C"
+    },
+    {
+      "name": "ICRP | Head Director",
+      "tier": "lead",
+      "color": "#D6A34C"
+    },
+    {
+      "name": "ICRP | Deputy Director",
+      "tier": "lead",
+      "color": "#D6A34C"
+    },
+    {
+      "name": "ICRP | Community Manager",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Admin",
+      "tier": "moderator",
+      "color": "#D94848"
+    },
+    {
+      "name": "ICRP | Senior Moderator",
+      "tier": "moderator",
+      "color": "#D94848"
+    },
+    {
+      "name": "ICRP | Moderator",
+      "tier": "moderator",
+      "color": "#D94848"
+    },
+    {
+      "name": "ICRP | Trial Moderator",
+      "tier": "trial",
+      "color": "#D9A93D"
+    },
+    {
+      "name": "ICRP | Support Team",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Event Staff",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Recruiter",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | LSPD Chief",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | LSPD Command",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | LSPD Officer",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | BCSO Sheriff",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | BCSO Command",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | BCSO Deputy",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | State Police Command",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | State Trooper",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Fire Chief",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | Fire / EMS",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Dispatch Supervisor",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | Dispatcher",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Civilian Director",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | Civilian",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Business Owner",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Whitelisted",
+      "tier": "member",
+      "color": "#8B9CA6"
+    },
+    {
+      "name": "ICRP | ICRP Community Member",
+      "tier": "member",
+      "color": "#8B9CA6"
+    },
+    {
+      "name": "ICRP | Applicant",
+      "tier": "applicant",
+      "color": "#A1AAB5"
+    },
+    {
+      "name": "ICRP | New Arrival",
+      "tier": "applicant",
+      "color": "#A1AAB5"
+    },
+    {
+      "name": "ICRP | On LOA",
+      "tier": "member",
+      "color": "#8B9CA6"
+    },
+    {
+      "name": "ICRP | Server Booster",
+      "tier": "member",
+      "color": "#8B9CA6"
+    },
+    {
+      "name": "ICRP | Muted",
+      "tier": "muted",
+      "color": "#595959"
+    },
+    {
+      "name": "ICRP | Economy Director",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Economy Staff",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Business Management",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Property Management",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Court Judge",
+      "tier": "factionlead",
+      "color": "#43B9B4"
+    },
+    {
+      "name": "ICRP | Court Clerk",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Legal Counsel",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Gang Leadership",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Community Staff",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Compliance Director",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Compliance Officer",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | HR Director",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | HR Team",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Staff Trainer",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Patrol Host",
+      "tier": "staff",
+      "color": "#5397D6"
+    },
+    {
+      "name": "ICRP | Reporter",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | News Team",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Police Recruit",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Fire EMS Recruit",
+      "tier": "faction",
+      "color": "#79A9BC"
+    },
+    {
+      "name": "ICRP | Network President",
+      "tier": "lead",
+      "color": "#DAAE46",
+      "group": "Executive & governance"
+    },
+    {
+      "name": "ICRP | Deputy Network President",
+      "tier": "lead",
+      "color": "#DAAE46",
+      "group": "Executive & governance"
+    },
+    {
+      "name": "ICRP | Chief Operating Director",
+      "tier": "lead",
+      "color": "#DAAE46",
+      "group": "Executive & governance"
+    },
+    {
+      "name": "ICRP | Operations Council Chair",
+      "tier": "lead",
+      "color": "#DAAE46",
+      "group": "Executive & governance"
+    },
+    {
+      "name": "ICRP | Executive Services Director",
+      "tier": "lead",
+      "color": "#DAAE46",
+      "group": "Executive & governance"
+    },
+    {
+      "name": "ICRP | Deputy Executive Services Director",
+      "tier": "lead",
+      "color": "#DAAE46",
+      "group": "Executive & governance"
+    },
+    {
+      "name": "ICRP | Integrity Division Director",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Standards Review Manager",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Internal Inquiry Lead",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Internal Inquiry Officer",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Appeals Review Chief",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Appeals Case Officer",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Policy Review Specialist",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Information Security Lead",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | Trust and Safety Officer",
+      "tier": "staff",
+      "color": "#26A184",
+      "group": "Accountability & compliance"
+    },
+    {
+      "name": "ICRP | People Operations Director",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | Deputy People Operations Director",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | Recruitment Manager",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | HR Case Supervisor",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | Personnel Relations Specialist",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | HR Case Reviewer",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | HR Coordinator",
+      "tier": "staff",
+      "color": "#EBA52E",
+      "group": "Human resources"
+    },
+    {
+      "name": "ICRP | Server Administration Director",
+      "tier": "moderator",
+      "color": "#DC4848",
+      "group": "Administration"
+    },
+    {
+      "name": "ICRP | Senior Server Administrator",
+      "tier": "moderator",
+      "color": "#DC4848",
+      "group": "Administration"
+    },
+    {
+      "name": "ICRP | Server Administrator",
+      "tier": "moderator",
+      "color": "#DC4848",
+      "group": "Administration"
+    },
+    {
+      "name": "ICRP | Assistant Server Administrator",
+      "tier": "moderator",
+      "color": "#DC4848",
+      "group": "Administration"
+    },
+    {
+      "name": "ICRP | Administrative Support Officer",
+      "tier": "moderator",
+      "color": "#DC4848",
+      "group": "Administration"
+    },
+    {
+      "name": "ICRP | Community Moderation Chief",
+      "tier": "moderator",
+      "color": "#49A666",
+      "group": "Moderation"
+    },
+    {
+      "name": "ICRP | Moderation Shift Lead",
+      "tier": "moderator",
+      "color": "#49A666",
+      "group": "Moderation"
+    },
+    {
+      "name": "ICRP | Lead Community Moderator",
+      "tier": "moderator",
+      "color": "#49A666",
+      "group": "Moderation"
+    },
+    {
+      "name": "ICRP | Community Moderator",
+      "tier": "moderator",
+      "color": "#49A666",
+      "group": "Moderation"
+    },
+    {
+      "name": "ICRP | Junior Community Moderator",
+      "tier": "moderator",
+      "color": "#49A666",
+      "group": "Moderation"
+    },
+    {
+      "name": "ICRP | Probationary Moderator",
+      "tier": "moderator",
+      "color": "#49A666",
+      "group": "Moderation"
+    },
+    {
+      "name": "ICRP | Learning and Development Director",
+      "tier": "staff",
+      "color": "#2196D2",
+      "group": "Training"
+    },
+    {
+      "name": "ICRP | Staff Academy Instructor",
+      "tier": "staff",
+      "color": "#2196D2",
+      "group": "Training"
+    },
+    {
+      "name": "ICRP | Training Evaluator",
+      "tier": "staff",
+      "color": "#2196D2",
+      "group": "Training"
+    },
+    {
+      "name": "ICRP | Training Mentor",
+      "tier": "staff",
+      "color": "#2196D2",
+      "group": "Training"
+    },
+    {
+      "name": "ICRP | New Staff Trainee",
+      "tier": "staff",
+      "color": "#2196D2",
+      "group": "Training"
+    },
+    {
+      "name": "ICRP | Community Relations Director",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Community Outreach Lead",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Community Services Agent",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Community Event Host",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Creative Media Specialist",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Marketing Coordinator",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Economy Oversight Lead",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Economy Services Agent",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Civilian Services Lead",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Civilian Services Agent",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Member Assistance Agent",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | Community Liaison",
+      "tier": "staff",
+      "color": "#A767DF",
+      "group": "Community & specialist teams"
+    },
+    {
+      "name": "ICRP | ICRP Community Session Director",
+      "tier": "staff",
+      "color": "#5476DF",
+      "group": "ICRP Community session operations"
+    },
+    {
+      "name": "ICRP | Session Coordinator",
+      "tier": "staff",
+      "color": "#5476DF",
+      "group": "ICRP Community session operations"
+    },
+    {
+      "name": "ICRP | Senior Session Host",
+      "tier": "staff",
+      "color": "#5476DF",
+      "group": "ICRP Community session operations"
+    },
+    {
+      "name": "ICRP | Session Host",
+      "tier": "staff",
+      "color": "#5476DF",
+      "group": "ICRP Community session operations"
+    },
+    {
+      "name": "ICRP | Patrol Lead",
+      "tier": "staff",
+      "color": "#5476DF",
+      "group": "ICRP Community session operations"
+    },
+    {
+      "name": "ICRP | RP Quality Evaluator",
+      "tier": "staff",
+      "color": "#5476DF",
+      "group": "ICRP Community session operations"
+    },
+    {
+      "name": "ICRP | Security Operations Chief",
+      "tier": "moderator",
+      "color": "#2D758B",
+      "group": "Security"
+    },
+    {
+      "name": "ICRP | Lead Server Security Officer",
+      "tier": "moderator",
+      "color": "#2D758B",
+      "group": "Security"
+    },
+    {
+      "name": "ICRP | Server Security Officer",
+      "tier": "moderator",
+      "color": "#2D758B",
+      "group": "Security"
+    },
+    {
+      "name": "ICRP | Assistant Security Officer",
+      "tier": "moderator",
+      "color": "#2D758B",
+      "group": "Security"
+    },
+    {
+      "name": "ICRP | Law Enforcement Commissioner",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | State Patrol Superintendent",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | County Sheriff",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | Metro Police Chief",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | Tactical Operations Captain",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | Air Support Commander",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | Traffic Enforcement Lead",
+      "tier": "factionlead",
+      "color": "#356FA0",
+      "group": "Law enforcement operations"
+    },
+    {
+      "name": "ICRP | Metro Police Department",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | County Sheriff Department",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | State Highway Patrol",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Park Ranger Service",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Federal Investigation Unit",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Air Support Unit",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Traffic Enforcement Unit",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Tactical Response Unit",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Fire Rescue Department",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Emergency Medical Service",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Dispatch Communications",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Civilian Bureau",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Department Recruit",
+      "tier": "faction",
+      "color": "#76A3BD",
+      "group": "RP departments"
+    },
+    {
+      "name": "ICRP | Civilian Rank 0",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 1",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 2",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 3",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 4",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 5",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 6",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 7",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 8",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 9",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Rank 10",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Civilian Trainee",
+      "tier": "member",
+      "color": "#58C77A",
+      "group": "Civilian progression"
+    },
+    {
+      "name": "ICRP | Shop Clerk",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Delivery Driver",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Freight Hauler",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Auto Dealer",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Auto Mechanic",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Air Charter Pilot",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Cab Driver",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Legal Advocate",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Real Estate Holder",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Registered Business Owner",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Property Agent",
+      "tier": "member",
+      "color": "#83B9AE",
+      "group": "Roleplay employment"
+    },
+    {
+      "name": "ICRP | Community Pioneer",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Veteran Member",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Distinguished Former Staff",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Supporter",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Gold Supporter",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Silver Supporter",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Bronze Supporter",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Roleplayer of the Month",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Roleplayer of the Year",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Community Achievement Recipient",
+      "tier": "member",
+      "color": "#B87BDD",
+      "group": "Recognition & membership"
+    },
+    {
+      "name": "ICRP | Staff Off Duty",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Staff On Duty",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Staff Leave of Absence",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Former Staff Member",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Staff Warning Level 1",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Staff Warning Level 2",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Staff Warning Level 3",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | HR Warning Level 1",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | HR Warning Level 2",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | HR Warning Level 3",
+      "tier": "member",
+      "color": "#CE9F42",
+      "group": "Staff status"
+    },
+    {
+      "name": "ICRP | Member Warning 1",
+      "tier": "member",
+      "color": "#555F70",
+      "group": "Member warnings"
+    },
+    {
+      "name": "ICRP | Member Warning 2",
+      "tier": "member",
+      "color": "#555F70",
+      "group": "Member warnings"
+    },
+    {
+      "name": "ICRP | Member Warning 3",
+      "tier": "member",
+      "color": "#555F70",
+      "group": "Member warnings"
+    },
+    {
+      "name": "ICRP | Member Warning 4",
+      "tier": "member",
+      "color": "#555F70",
+      "group": "Member warnings"
+    },
+    {
+      "name": "ICRP | State Governor",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Regional Council Member",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Civic Representative",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Chief Justice",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Court Justice",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Prosecuting Attorney",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Defense Advocate",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Certified Business Operator",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Registered Gang Leader",
+      "tier": "faction",
+      "color": "#C5A9D6",
+      "group": "Civic & court roleplay"
+    },
+    {
+      "name": "ICRP | Business Income Level 1",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 2",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 3",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 4",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 5",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 6",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 7",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 8",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 9",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | Business Income Level 10",
+      "tier": "member",
+      "color": "#91A6B4"
+    },
+    {
+      "name": "ICRP | In RP Events",
+      "tier": "member",
+      "color": "#54BFA4"
+    },
+    {
+      "name": "ICRP | GTA Minigames",
+      "tier": "member",
+      "color": "#6999C4"
+    },
+    {
+      "name": "ICRP | Out of RP Games",
+      "tier": "member",
+      "color": "#89949C"
+    },
+    {
+      "name": "ICRP | Newspaper Subscriber",
+      "tier": "member",
+      "color": "#A86DCE"
+    },
+    {
+      "name": "ICRP | Economy Participant",
+      "tier": "member",
+      "color": "#54BFA4"
+    }
+  ],
+  "categories": [
+    {
+      "name": "📌 START HERE",
+      "access": "public",
+      "channels": [
+        {
+          "name": "welcome",
+          "type": "text"
+        },
+        {
+          "name": "rules",
+          "type": "text"
+        },
+        {
+          "name": "server-information",
+          "type": "text"
+        },
+        {
+          "name": "announcements",
+          "type": "text"
+        },
+        {
+          "name": "how-to-join",
+          "type": "text"
+        },
+        {
+          "name": "verification",
+          "type": "text"
+        },
+        {
+          "name": "roles-info",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🌐 COMMUNITY",
+      "access": "member",
+      "channels": [
+        {
+          "name": "general-chat",
+          "type": "text"
+        },
+        {
+          "name": "media-clips",
+          "type": "text"
+        },
+        {
+          "name": "introductions",
+          "type": "text"
+        },
+        {
+          "name": "suggestions",
+          "type": "text"
+        },
+        {
+          "name": "polls",
+          "type": "text"
+        },
+        {
+          "name": "bot-commands",
+          "type": "text"
+        },
+        {
+          "name": "looking-for-rp",
+          "type": "text"
+        },
+        {
+          "name": "main-chat",
+          "type": "text"
+        },
+        {
+          "name": "department-transfer",
+          "type": "text"
+        },
+        {
+          "name": "off-topic",
+          "type": "text"
+        },
+        {
+          "name": "rp-in-game-pictures",
+          "type": "text"
+        },
+        {
+          "name": "scene-ideas",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🎮 ICRP Community ROLEPLAY",
+      "access": "member",
+      "channels": [
+        {
+          "name": "rp-announcements",
+          "type": "text"
+        },
+        {
+          "name": "session-status",
+          "type": "text"
+        },
+        {
+          "name": "session-start-times",
+          "type": "text"
+        },
+        {
+          "name": "session-priority",
+          "type": "text"
+        },
+        {
+          "name": "rp-guidelines",
+          "type": "text"
+        },
+        {
+          "name": "character-registration",
+          "type": "text"
+        },
+        {
+          "name": "character-stories",
+          "type": "text"
+        },
+        {
+          "name": "rp-reports",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🎫 HELP DESK",
+      "access": "public",
+      "channels": [
+        {
+          "name": "open-a-ticket",
+          "type": "text"
+        },
+        {
+          "name": "frequently-asked-questions",
+          "type": "text"
+        },
+        {
+          "name": "appeals-information",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "📋 APPLICATIONS",
+      "access": "member",
+      "channels": [
+        {
+          "name": "apply-for-staff",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-leo",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-fire-ems",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-dispatch",
+          "type": "text"
+        },
+        {
+          "name": "apply-for-civilian",
+          "type": "text"
+        },
+        {
+          "name": "application-status",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🚓 LAW ENFORCEMENT",
+      "access": "leo",
+      "channels": [
+        {
+          "name": "leo-announcements",
+          "type": "text"
+        },
+        {
+          "name": "leo-roster",
+          "type": "text"
+        },
+        {
+          "name": "leo-reports",
+          "type": "text"
+        },
+        {
+          "name": "leo-training",
+          "type": "text"
+        },
+        {
+          "name": "leo-resources",
+          "type": "text"
+        },
+        {
+          "name": "leo-radio",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "leo-briefing",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🚒 FIRE & EMS",
+      "access": "fire",
+      "channels": [
+        {
+          "name": "fire-ems-announcements",
+          "type": "text"
+        },
+        {
+          "name": "fire-ems-roster",
+          "type": "text"
+        },
+        {
+          "name": "fire-ems-reports",
+          "type": "text"
+        },
+        {
+          "name": "medical-training",
+          "type": "text"
+        },
+        {
+          "name": "fire-ems-radio",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "fire-ems-briefing",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "📞 DISPATCH",
+      "access": "dispatch",
+      "channels": [
+        {
+          "name": "dispatch-announcements",
+          "type": "text"
+        },
+        {
+          "name": "dispatch-log",
+          "type": "text"
+        },
+        {
+          "name": "dispatch-sop",
+          "type": "text"
+        },
+        {
+          "name": "dispatch-operations",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🚗 CIVILIAN OPERATIONS",
+      "access": "civilian",
+      "channels": [
+        {
+          "name": "civilian-announcements",
+          "type": "text"
+        },
+        {
+          "name": "business-registration",
+          "type": "text"
+        },
+        {
+          "name": "civilian-operations",
+          "type": "text"
+        },
+        {
+          "name": "civilian-briefing",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🔊 PUBLIC VOICE",
+      "access": "member",
+      "channels": [
+        {
+          "name": "General VC 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "General VC 2",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Community Hangout",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Looking For RP",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "AFK",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🎭 ROLEPLAY VOICE",
+      "access": "member",
+      "channels": [
+        {
+          "name": "RP Waiting Room",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Scene 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Scene 2",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Scene 3",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Traffic Stop 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Traffic Stop 2",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Interview Room 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Interview Room 2",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🏛️ STAFF ZONE",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-announcements",
+          "type": "text"
+        },
+        {
+          "name": "staff-chat",
+          "type": "text"
+        },
+        {
+          "name": "staff-schedule",
+          "type": "text"
+        },
+        {
+          "name": "staff-reports",
+          "type": "text"
+        },
+        {
+          "name": "staff-guidelines",
+          "type": "text"
+        },
+        {
+          "name": "staff-resources",
+          "type": "text"
+        },
+        {
+          "name": "Staff Meeting",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Staff Lounge",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🔐 MODERATION",
+      "access": "moderation",
+      "channels": [
+        {
+          "name": "mod-chat",
+          "type": "text"
+        },
+        {
+          "name": "incident-reports",
+          "type": "text"
+        },
+        {
+          "name": "moderation-log",
+          "type": "text"
+        },
+        {
+          "name": "security-alerts",
+          "type": "text"
+        },
+        {
+          "name": "ticket-transcripts",
+          "type": "text"
+        },
+        {
+          "name": "Moderation VC",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "👑 EXECUTIVE",
+      "access": "lead",
+      "channels": [
+        {
+          "name": "leadership-chat",
+          "type": "text"
+        },
+        {
+          "name": "executive-decisions",
+          "type": "text"
+        },
+        {
+          "name": "staff-appointments",
+          "type": "text"
+        },
+        {
+          "name": "Leadership VC",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🤖 BOT SYSTEM",
+      "access": "moderation",
+      "channels": [
+        {
+          "name": "bot-logs",
+          "type": "text"
+        },
+        {
+          "name": "join-leave-logs",
+          "type": "text"
+        },
+        {
+          "name": "verification-logs",
+          "type": "text"
+        },
+        {
+          "name": "automod-alerts",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🧑‍🏫 STAFF TRAINING",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-training-info",
+          "type": "text"
+        },
+        {
+          "name": "training-materials",
+          "type": "text"
+        },
+        {
+          "name": "training-announcements",
+          "type": "text"
+        },
+        {
+          "name": "training-request",
+          "type": "text"
+        },
+        {
+          "name": "training-results",
+          "type": "text"
+        },
+        {
+          "name": "Staff Training Room",
+          "type": "voice"
+        },
+        {
+          "name": "Staff Interview Room",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "📅 STAFF OPERATIONS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-check-in",
+          "type": "text"
+        },
+        {
+          "name": "shift-and-availability",
+          "type": "text"
+        },
+        {
+          "name": "leave-of-absence",
+          "type": "text"
+        },
+        {
+          "name": "staff-promotions",
+          "type": "text"
+        },
+        {
+          "name": "staff-feedback",
+          "type": "text"
+        },
+        {
+          "name": "staff-notices",
+          "type": "text"
+        },
+        {
+          "name": "Staff Briefing 1",
+          "type": "voice"
+        },
+        {
+          "name": "Staff Briefing 2",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "⚖️ STAFF COMPLIANCE & HR",
+      "access": "lead",
+      "channels": [
+        {
+          "name": "hr-announcements",
+          "type": "text"
+        },
+        {
+          "name": "internal-investigations",
+          "type": "text"
+        },
+        {
+          "name": "staff-disciplinary-cases",
+          "type": "text"
+        },
+        {
+          "name": "staff-appeals",
+          "type": "text"
+        },
+        {
+          "name": "staff-review-board",
+          "type": "text"
+        },
+        {
+          "name": "HR Meeting",
+          "type": "voice"
+        },
+        {
+          "name": "Private Hearing Room",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "📥 STAFF APPLICATION REVIEWS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-applications",
+          "type": "text"
+        },
+        {
+          "name": "interview-scheduling",
+          "type": "text"
+        },
+        {
+          "name": "interview-results",
+          "type": "text"
+        },
+        {
+          "name": "recruitment-team",
+          "type": "text"
+        },
+        {
+          "name": "Recruitment Interview 1",
+          "type": "voice"
+        },
+        {
+          "name": "Recruitment Interview 2",
+          "type": "voice"
+        }
+      ]
+    },
+    {
+      "name": "📂 STAFF DOCUMENTS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "staff-handbook",
+          "type": "text"
+        },
+        {
+          "name": "chain-of-command",
+          "type": "text"
+        },
+        {
+          "name": "staff-rules",
+          "type": "text"
+        },
+        {
+          "name": "staff-sop",
+          "type": "text"
+        },
+        {
+          "name": "discipline-policy",
+          "type": "text"
+        },
+        {
+          "name": "promotion-policy",
+          "type": "text"
+        },
+        {
+          "name": "retirement-policy",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "💰 ICRP ECONOMY",
+      "access": "member",
+      "channels": [
+        {
+          "name": "💵│icrp-bank",
+          "type": "text"
+        },
+        {
+          "name": "🏪│community-store",
+          "type": "text"
+        },
+        {
+          "name": "💼│rp-job-board",
+          "type": "text"
+        },
+        {
+          "name": "📝│job-applications",
+          "type": "text"
+        },
+        {
+          "name": "🏢│business-requests",
+          "type": "text"
+        },
+        {
+          "name": "🏬│registered-businesses",
+          "type": "text"
+        },
+        {
+          "name": "🏠│property-requests",
+          "type": "text"
+        },
+        {
+          "name": "🏘️│property-registry",
+          "type": "text"
+        },
+        {
+          "name": "📈│property-market",
+          "type": "text"
+        },
+        {
+          "name": "💸│civilian-paychecks",
+          "type": "text"
+        },
+        {
+          "name": "📊│career-progression",
+          "type": "text"
+        },
+        {
+          "name": "💲│fines-and-fees",
+          "type": "text"
+        },
+        {
+          "name": "🧾│payment-receipts",
+          "type": "text"
+        },
+        {
+          "name": "🤖│economy-commands",
+          "type": "text"
+        },
+        {
+          "name": "💡│economy-feedback",
+          "type": "text"
+        },
+        {
+          "name": "bank",
+          "type": "text"
+        },
+        {
+          "name": "store",
+          "type": "text"
+        },
+        {
+          "name": "job-listings",
+          "type": "text"
+        },
+        {
+          "name": "job-applications",
+          "type": "text"
+        },
+        {
+          "name": "request-businesses",
+          "type": "text"
+        },
+        {
+          "name": "owned-businesses",
+          "type": "text"
+        },
+        {
+          "name": "request-property",
+          "type": "text"
+        },
+        {
+          "name": "owned-properties",
+          "type": "text"
+        },
+        {
+          "name": "properties-being-sold",
+          "type": "text"
+        },
+        {
+          "name": "federal-properties",
+          "type": "text"
+        },
+        {
+          "name": "civilian-job-incomes",
+          "type": "text"
+        },
+        {
+          "name": "civilian-career-choices",
+          "type": "text"
+        },
+        {
+          "name": "black-market-info",
+          "type": "text"
+        },
+        {
+          "name": "black-market",
+          "type": "text"
+        },
+        {
+          "name": "fines",
+          "type": "text"
+        },
+        {
+          "name": "proof-of-payment",
+          "type": "text"
+        },
+        {
+          "name": "economy-commands",
+          "type": "text"
+        },
+        {
+          "name": "economy-suggestions",
+          "type": "text"
+        },
+        {
+          "name": "leo-payments",
+          "type": "text"
+        },
+        {
+          "name": "donor-payments",
+          "type": "text"
+        },
+        {
+          "name": "economy-staff",
+          "type": "text"
+        },
+        {
+          "name": "economy-staff-guide",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "📰 ICRP NEWSROOM",
+      "access": "member",
+      "channels": [
+        {
+          "name": "📰│icrp-news",
+          "type": "text"
+        },
+        {
+          "name": "📨│submit-news-tip",
+          "type": "text"
+        },
+        {
+          "name": "📸│rp-photography",
+          "type": "text"
+        },
+        {
+          "name": "🎙️│news-broadcasts",
+          "type": "text"
+        },
+        {
+          "name": "📢│community-highlights",
+          "type": "text"
+        },
+        {
+          "name": "newspaper-information",
+          "type": "text"
+        },
+        {
+          "name": "newspaper-request",
+          "type": "text"
+        },
+        {
+          "name": "tinfoil-times",
+          "type": "text"
+        },
+        {
+          "name": "weekly-news",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🖥️ ICRP CAD & MDT",
+      "access": "member",
+      "channels": [
+        {
+          "name": "🖥️│cad-announcements",
+          "type": "text"
+        },
+        {
+          "name": "🚓│cad-and-mdt-access",
+          "type": "text"
+        },
+        {
+          "name": "📖│cad-user-guide",
+          "type": "text"
+        },
+        {
+          "name": "🛠️│cad-support",
+          "type": "text"
+        },
+        {
+          "name": "🚨│dispatch-incidents",
+          "type": "text"
+        },
+        {
+          "name": "cad-announcements",
+          "type": "text"
+        },
+        {
+          "name": "cad-mdt",
+          "type": "text"
+        },
+        {
+          "name": "cad-guide",
+          "type": "text"
+        },
+        {
+          "name": "cad-support",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "📣 ICRP SESSION COMMAND",
+      "access": "member",
+      "channels": [
+        {
+          "name": "📍│session-aop",
+          "type": "text"
+        },
+        {
+          "name": "📣│governor-bulletins",
+          "type": "text"
+        },
+        {
+          "name": "🚦│in-session-updates",
+          "type": "text"
+        },
+        {
+          "name": "🚫│prohibited-servers",
+          "type": "text"
+        },
+        {
+          "name": "🗓️│roleplay-calendar",
+          "type": "text"
+        },
+        {
+          "name": "🎮│session-signups",
+          "type": "text"
+        },
+        {
+          "name": "ICRP Session Lobby",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "RP Session Operations",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "session-aops",
+          "type": "text"
+        },
+        {
+          "name": "governor-announcements",
+          "type": "text"
+        },
+        {
+          "name": "in-rp-announcement",
+          "type": "text"
+        },
+        {
+          "name": "blacklisted-servers",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🤝 ICRP GANGS & GROUPS",
+      "access": "member",
+      "channels": [
+        {
+          "name": "📜│gang-guidelines",
+          "type": "text"
+        },
+        {
+          "name": "📃│approved-groups",
+          "type": "text"
+        },
+        {
+          "name": "📥│gang-applications",
+          "type": "text"
+        },
+        {
+          "name": "🗺️│territory-claims",
+          "type": "text"
+        },
+        {
+          "name": "🎫│gang-support",
+          "type": "text"
+        },
+        {
+          "name": "💬│gang-general",
+          "type": "text"
+        },
+        {
+          "name": "Gang Roleplay Lobby",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🔐 ICRP GANG LEADERS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "🗝️│gang-leader-chat",
+          "type": "text"
+        },
+        {
+          "name": "🗳️│gang-approvals",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "⚖️ ICRP JUDICIAL",
+      "access": "member",
+      "channels": [
+        {
+          "name": "⚖️│court-procedures",
+          "type": "text"
+        },
+        {
+          "name": "📝│file-a-case",
+          "type": "text"
+        },
+        {
+          "name": "📁│public-dockets",
+          "type": "text"
+        },
+        {
+          "name": "📄│contract-registry",
+          "type": "text"
+        },
+        {
+          "name": "🏛️│governor-campaigns",
+          "type": "text"
+        },
+        {
+          "name": "Court Waiting Room",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Civil Court",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Appeals Court",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Criminal Court",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "📜 ICRP SERVER INFORMATION",
+      "access": "public",
+      "channels": [
+        {
+          "name": "📌│start-here",
+          "type": "text"
+        },
+        {
+          "name": "🚦│server-conduct",
+          "type": "text"
+        },
+        {
+          "name": "🚫│banned-vehicles-weapons",
+          "type": "text"
+        },
+        {
+          "name": "🗓️│session-calendar",
+          "type": "text"
+        },
+        {
+          "name": "❓│getting-started",
+          "type": "text"
+        },
+        {
+          "name": "🆘│support-guide",
+          "type": "text"
+        },
+        {
+          "name": "📣│department-promotions",
+          "type": "text"
+        },
+        {
+          "name": "💡│community-suggestions",
+          "type": "text"
+        },
+        {
+          "name": "⏳│time-zones",
+          "type": "text"
+        },
+        {
+          "name": "🪪│character-names",
+          "type": "text"
+        },
+        {
+          "name": "🎭│choose-your-roles",
+          "type": "text"
+        },
+        {
+          "name": "🚓│leo-department-info",
+          "type": "text"
+        },
+        {
+          "name": "🚒│fire-ems-department-info",
+          "type": "text"
+        },
+        {
+          "name": "hello-goodbye",
+          "type": "text"
+        },
+        {
+          "name": "banned-vehicles-weapons",
+          "type": "text"
+        },
+        {
+          "name": "roleplay-schedule",
+          "type": "text"
+        },
+        {
+          "name": "department-advertisements",
+          "type": "text"
+        },
+        {
+          "name": "time-zones",
+          "type": "text"
+        },
+        {
+          "name": "character-names",
+          "type": "text"
+        },
+        {
+          "name": "reaction-roles",
+          "type": "text"
+        },
+        {
+          "name": "leo-server",
+          "type": "text"
+        },
+        {
+          "name": "fire-ems-server",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🚓 ICRP CIVILIAN ROLEPLAY",
+      "access": "member",
+      "channels": [
+        {
+          "name": "🚨│civilian-scenarios",
+          "type": "text"
+        },
+        {
+          "name": "🚗│civilian-rank-requests",
+          "type": "text"
+        },
+        {
+          "name": "💡│civilian-suggestions",
+          "type": "text"
+        },
+        {
+          "name": "📈│career-options",
+          "type": "text"
+        },
+        {
+          "name": "📝│civilian-activity-logs",
+          "type": "text"
+        },
+        {
+          "name": "🎫│civilian-support",
+          "type": "text"
+        },
+        {
+          "name": "Civilian Roleplay 1",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Civilian Roleplay 2",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "👥 ICRP STAFF COMMAND",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "📣│staff-announcements-2",
+          "type": "text"
+        },
+        {
+          "name": "📢│staff-meeting-notices",
+          "type": "text"
+        },
+        {
+          "name": "📖│staff-handbook",
+          "type": "text"
+        },
+        {
+          "name": "🗃️│staff-activity-logs",
+          "type": "text"
+        },
+        {
+          "name": "💡│staff-suggestions",
+          "type": "text"
+        },
+        {
+          "name": "🤖│staff-utilities",
+          "type": "text"
+        },
+        {
+          "name": "💬│staff-discussion",
+          "type": "text"
+        },
+        {
+          "name": "📋│community-team-logs",
+          "type": "text"
+        },
+        {
+          "name": "🧾│staff-finance-logs",
+          "type": "text"
+        },
+        {
+          "name": "🔗│staff-chain-of-command",
+          "type": "text"
+        },
+        {
+          "name": "📗│staff-ranks-and-duties",
+          "type": "text"
+        },
+        {
+          "name": "🔧│server-upkeep",
+          "type": "text"
+        },
+        {
+          "name": "💬│community-staff-channel",
+          "type": "text"
+        },
+        {
+          "name": "📝│staff-leave-requests",
+          "type": "text"
+        },
+        {
+          "name": "📆│staff-attendance",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🎓 ICRP STAFF GUIDANCE",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "📚│staff-code-of-conduct",
+          "type": "text"
+        },
+        {
+          "name": "📝│leave-policy",
+          "type": "text"
+        },
+        {
+          "name": "📑│announcements-guidelines",
+          "type": "text"
+        },
+        {
+          "name": "📕│compliance-guides",
+          "type": "text"
+        },
+        {
+          "name": "🔢│session-statistics",
+          "type": "text"
+        },
+        {
+          "name": "📘│hosting-instructions",
+          "type": "text"
+        },
+        {
+          "name": "🛡️│moderation-procedures",
+          "type": "text"
+        },
+        {
+          "name": "🗳️│promotion-requests",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "🔊 ICRP STAFF OFFICES",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "Staff Waiting Room",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Staff Lounge",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Staff Meeting Hall",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Staff Training Classroom",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Moderator Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Compliance Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Human Resources Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Director Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "compliance-office",
+          "type": "text"
+        },
+        {
+          "name": "staff-office",
+          "type": "text"
+        },
+        {
+          "name": "staff-waiting-office",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "👑 ICRP EXECUTIVE OFFICES",
+      "access": "lead",
+      "channels": [
+        {
+          "name": "👑│executive-schedule",
+          "type": "text"
+        },
+        {
+          "name": "🔒│executive-briefings",
+          "type": "text"
+        },
+        {
+          "name": "Founders Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Co-Owners Office",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Executive Leadership Office",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🛡️ ICRP CASES & DISCIPLINE",
+      "access": "moderation",
+      "channels": [
+        {
+          "name": "🎫│report-a-member",
+          "type": "text"
+        },
+        {
+          "name": "🎫│report-a-staff-member",
+          "type": "text"
+        },
+        {
+          "name": "📕│incident-reviews",
+          "type": "text"
+        },
+        {
+          "name": "🛑│security-concerns",
+          "type": "text"
+        },
+        {
+          "name": "⚖️│appeal-submissions",
+          "type": "text"
+        },
+        {
+          "name": "🔒│ban-history",
+          "type": "text"
+        },
+        {
+          "name": "🔒│staff-discipline",
+          "type": "text"
+        },
+        {
+          "name": "🔒│promotion-log",
+          "type": "text"
+        },
+        {
+          "name": "🔒│demotion-log",
+          "type": "text"
+        },
+        {
+          "name": "🔒│case-register",
+          "type": "text"
+        },
+        {
+          "name": "🔒│strike-appeal-log",
+          "type": "text"
+        },
+        {
+          "name": "📁│ticket-archive",
+          "type": "text"
+        },
+        {
+          "name": "report-staff",
+          "type": "text"
+        },
+        {
+          "name": "report-a-member",
+          "type": "text"
+        },
+        {
+          "name": "ban-logs",
+          "type": "text"
+        },
+        {
+          "name": "punishment-log",
+          "type": "text"
+        },
+        {
+          "name": "punishments-for-rulebreaks",
+          "type": "text"
+        },
+        {
+          "name": "security-risk-tickets",
+          "type": "text"
+        },
+        {
+          "name": "strike-appeal",
+          "type": "text"
+        },
+        {
+          "name": "staff-punishment-log",
+          "type": "text"
+        },
+        {
+          "name": "promotion-log",
+          "type": "text"
+        },
+        {
+          "name": "demotion-log",
+          "type": "text"
+        },
+        {
+          "name": "case-logs",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "📣 ICRP STAFF TEAMS",
+      "access": "staff",
+      "channels": [
+        {
+          "name": "👥│community-operations",
+          "type": "text"
+        },
+        {
+          "name": "🧭│compliance-team",
+          "type": "text"
+        },
+        {
+          "name": "📅│patrol-host-chat",
+          "type": "text"
+        },
+        {
+          "name": "🗂️│application-reviews",
+          "type": "text"
+        },
+        {
+          "name": "Interview Room A",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Interview Room B",
+          "type": "voice",
+          "limit": 0
+        },
+        {
+          "name": "Staff Training Room 2",
+          "type": "voice",
+          "limit": 0
+        }
+      ]
+    },
+    {
+      "name": "🎉 ICRP EVENTS & ACTIVITIES",
+      "access": "member",
+      "channels": [
+        {
+          "name": "in-rp-events",
+          "type": "text"
+        },
+        {
+          "name": "gta-minigames",
+          "type": "text"
+        },
+        {
+          "name": "out-of-rp-games",
+          "type": "text"
+        },
+        {
+          "name": "event-schedule",
+          "type": "text"
+        },
+        {
+          "name": "event-signups",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "bot_names_to_check": [
+    "Wick",
+    "Ticket Tool",
+    "Carl-bot",
+    "Dyno"
+  ],
+  "mass_mention_roles": [
+    "ICRP | Owner",
+    "ICRP | Co-Owner",
+    "ICRP | Head Director"
+  ],
+  "role_groups_description": "Includes business income levels 1–10, economy participation, news subscribers, RP events, GTA minigames and out-of-RP games, in addition to prior staff and civilian roles."
+}
