@@ -98,7 +98,7 @@ async def build(guild):
             await asyncio.sleep(.25)
     for cname,entries in CFG['categories'].items():
         cat=discord.utils.get(guild.categories,name=cname)
-        if not cat: cat=await guild.create_category(cname[:100],overwrites=private_overwrites(guild,cname),reason='ICRP Network Hub build')
+        if not cat: cat=await guild.create_category(cname[:100],overwrites=private_overwrites(guild,cname) or {},reason='ICRP Network Hub build')
         for name,kind in entries:
             if any(ch.name==name and ((isinstance(ch,discord.VoiceChannel))==(kind=='voice')) for ch in cat.channels): continue
             if kind=='voice': await guild.create_voice_channel(name[:100],category=cat,reason='ICRP Network Hub build')
