@@ -1,0 +1,266 @@
+{
+  "roles": [
+    "ICRP | Corporate",
+    "ICRP | Founder",
+    "ICRP | Assistant Founder",
+    "ICRP | Co-Founder",
+    "ICRP | Owner",
+    "ICRP | Manager of Information Bureau",
+    "ICRP | Co-Owner",
+    "ICRP | Head Director",
+    "ICRP | Deputy Head Director",
+    "ICRP | Chief Human Resources Officer",
+    "ICRP | Chief Security & Compliance Officer",
+    "ICRP | Chief Community & Engagement Officer",
+    "ICRP | Asst. Chief Community Engagement Officer",
+    "ICRP | Asst. Chief Compliance Officer",
+    "ICRP | Assistant Director of Human Resources",
+    "ICRP | Human Resources Management",
+    "ICRP | Staff",
+    "ICRP | Moderator",
+    "ICRP | PS5 Accepted",
+    "ICRP | PS4 Accepted",
+    "ICRP | XBOX Accepted",
+    "ICRP | FiveM Accepted",
+    "ICRP | Member",
+    "ICRP | Under Age [Staff]",
+    "ICRP | Server Booster",
+    "Bronze | Server Booster",
+    "Silver | Server Booster",
+    "Gold | Server Booster",
+    "Diamond | Server Booster",
+    "ICRP | Assistant HR Manager",
+    "ICRP | Director Of Internal Affairs",
+    "ICRP | Director Of Staff Training And Development",
+    "ICRP | Director Of Strike Ban Appeal",
+    "ICRP | Director of Server Security",
+    "ICRP | Director of Compliance and Administration",
+    "ICRP | Assistant Director Of Server Security",
+    "ICRP | Assistant Director Of Compliance",
+    "ICRP | Director Of Community",
+    "ICRP | Assistant Director of Community",
+    "ICRP | Director Of Marketing",
+    "ICRP | Director Of Economy",
+    "ICRP | Director Of Business",
+    "ICRP | Director Of Public Safety",
+    "ICRP | Civilian Director",
+    "ICRP | Assistant Director Public Safety",
+    "ICRP | Assistant Director Of Civilian",
+    "ICRP | Civilian Manager",
+    "ICRP | Civilian Team Member",
+    "ICRP | Xbox Director",
+    "ICRP | Assistant Xbox Director",
+    "ICRP | Director Of PS5",
+    "ICRP | Director of PS4",
+    "ICRP | HR Supervisor",
+    "ICRP | HR Representative",
+    "ICRP | Honored Former Staff",
+    "ICRP | Board Of Directors",
+    "ICRP | Security Officer",
+    "ICRP | Junior Security Officer",
+    "ICRP | Director Of Administration",
+    "ICRP | Asst. Director Of Administrator",
+    "ICRP | Administration Team Lead",
+    "ICRP | Senior Administrator",
+    "ICRP | Administrator"
+  ],
+  "categories": {
+    "{Welcome Center}": [
+      [
+        "【👋】welcome-area",
+        "text"
+      ],
+      [
+        "【🎫】tickets",
+        "text"
+      ],
+      [
+        "【🎫】staff-application-tickets",
+        "text"
+      ],
+      [
+        "【📈】invite-tracker",
+        "text"
+      ],
+      [
+        "【✍️】partnership-form",
+        "text"
+      ],
+      [
+        "【🔗】xbox-server-link",
+        "text"
+      ],
+      [
+        "【🔗】ps5-server-link",
+        "text"
+      ],
+      [
+        "【🔗】arma-server-invite",
+        "text"
+      ],
+      [
+        "【🔗】minecraft-server-invite",
+        "text"
+      ],
+      [
+        "【🔗】rdr2-server-invite",
+        "text"
+      ]
+    ],
+    "{Announcements}": [
+      [
+        "【📣】server-announcements",
+        "text"
+      ],
+      [
+        "【📜】rules-and-guidelines",
+        "text"
+      ]
+    ],
+    "{Donations & Memberships}": [
+      [
+        "【🚀】booster-perks",
+        "text"
+      ],
+      [
+        "【📄】partnerships",
+        "text"
+      ],
+      [
+        "【📄】server-advertisement",
+        "text"
+      ]
+    ],
+    "{Application Center}": [
+      [
+        "【❗】application-announcements",
+        "text"
+      ],
+      [
+        "【❓】help",
+        "text"
+      ],
+      [
+        "【❓】how-to-join",
+        "text"
+      ],
+      [
+        "【📘】ps5-application",
+        "text"
+      ],
+      [
+        "【📗】old-gen-xbox-application",
+        "text"
+      ],
+      [
+        "【📒】staff-application",
+        "text"
+      ]
+    ],
+    "{Department Platforms}": [
+      [
+        "【🚓】law-enforcement-operations",
+        "text"
+      ],
+      [
+        "【🧍】civilian-operations",
+        "text"
+      ]
+    ],
+    "{General Information}": [
+      [
+        "【💬】general-chat",
+        "text"
+      ],
+      [
+        "【🚀】bump-chat",
+        "text"
+      ],
+      [
+        "WAITING ROOM",
+        "voice"
+      ]
+    ],
+    "[Human Resources]": [
+      [
+        "【📣】staff-announcements",
+        "text"
+      ],
+      [
+        "【💬】staff-chat",
+        "text"
+      ],
+      [
+        "【📖】ps5-member-applications",
+        "text"
+      ],
+      [
+        "【📖】ps4-member-applications",
+        "text"
+      ],
+      [
+        "【📖】xbox-member-applications",
+        "text"
+      ],
+      [
+        "【📖】fivem-member-applications",
+        "text"
+      ],
+      [
+        "【🛡️】moderator-only",
+        "text"
+      ],
+      [
+        "【⛔】ban-logs",
+        "text"
+      ],
+      [
+        "【📖】ticket-transcripts",
+        "text"
+      ],
+      [
+        "【⛔】staff-logs",
+        "text"
+      ],
+      [
+        "【🥳】birthdays",
+        "text"
+      ],
+      [
+        "【🏠】staff-server",
+        "text"
+      ],
+      [
+        "【📌】staff-ideas",
+        "text"
+      ],
+      [
+        "【📖】corporate-policies",
+        "text"
+      ],
+      [
+        "【📚】job-descriptions",
+        "text"
+      ],
+      [
+        "【📖】server-logs",
+        "text"
+      ],
+      [
+        "STAFF TRAINING ROOM",
+        "voice"
+      ]
+    ],
+    "OFFICES": [
+      [
+        "STAFF OFFICE",
+        "voice"
+      ],
+      [
+        "STAFF MEETING",
+        "voice"
+      ]
+    ],
+    "SUPPORT": []
+  }
+}
