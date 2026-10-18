@@ -420,6 +420,53 @@ async def arrange_icrp(ctx, confirm=''):
     print('ICRP layout completed; issues:',problems[:15],flush=True)
 
 
+STAFF_TIERS = frozenset(('owner', 'lead', 'moderator', 'staff', 'trial'))
+
+@bot.command(name='staff_roles')
+async def staff_roles(ctx, confirm=''):
+    """Install missing template staff roles only; existing permissions stay untouched."""
+    if not await allowed(ctx):
+        return
+    guild = ctx.guild
+    me = guild.me
+    if not me or not me.guild_permissions.manage_roles:
+        await ctx.send('The Community bot needs Manage Roles. Move its role above the roles it manages.')
+        return
+    wanted = [r for r in TEMPLATE['roles'] if r['tier'] in STAFF_TIERS]
+    missing_roles = [r for r in wanted if discord.utils.get(guild.roles, name=r['name']) is None]
+    if confirm != 'CONFIRM':
+        await ctx.send(f'ICRP staff-role preview: {len(wanted)} template staff roles, '
+                       f'{len(missing_roles)} missing. Run `!staff_roles CONFIRM` to create missing '
+                       'staff roles ONLY. Existing role permissions, channels and members will not change.')
+        return
+    if not missing_roles:
+        await ctx.send(f'All {len(wanted)} staff roles already exist by name. No permissions changed. '
+                       'If they are not visible in the sidebar, use `!display_roles CONFIRM` '
+                       'and assign the roles to members.')
+        return
+    created = []
+    errors = []
+    # Creating a role does not assign it to anyone. Preserve original template permissions.
+    for spec in reversed(missing_roles):
+        try:
+            kwargs = dict(name=spec['name'],
+                          permissions=role_perms(spec['name'], spec['tier']),
+                          hoist=separately_displayed(spec['name'], spec['tier']),
+                          mentionable=False,
+                          reason='ICRP staff-role-only template installation')
+            if spec.get('color'):
+                kwargs['colour'] = discord.Colour(int(spec['color'].lstrip('#'), 16))
+            await guild.create_role(**kwargs)
+            created.append(spec['name'])
+            print(f'ICRP staff role created: {spec["name"]}', flush=True)
+        except (discord.Forbidden, discord.HTTPException, ValueError) as exc:
+            errors.append(f'{spec["name"]}: {exc}')
+    await ctx.send(f'Staff role creation complete: {len(created)} created, '
+                   f'{len(wanted) - len(missing_roles)} previously present, '
+                   f'{len(errors)} errors. Existing roles and their permissions were not changed.'
+                   + (' First errors: ' + '; '.join(errors[:2])[:350] if errors else ''))
+
+
 @bot.command(name='display_roles')
 async def display_roles(ctx, confirm=''):
     """Create the Bots role, display staff and owner separately, and assign the owner role."""
